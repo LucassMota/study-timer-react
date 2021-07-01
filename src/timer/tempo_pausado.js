@@ -1,7 +1,5 @@
-// import React from 'react'
 import estudo from './tempo_estudado'
 
-// export default () => {
 let horas = 0
 let minutos = 0
 let segundos = 0
@@ -15,20 +13,6 @@ let splitPausa
 let splitPausaHoras = []
 let splitPausaMinutos = []
 let splitPausaSegundos = []
-
-// const botaoIniciarPausa = (document.getElementById('comecar-pausa').onclick =
-//   () => {
-//     if (estudo.tempoEstudado === '' && estudo.estudoIniciado == 0) {
-//       window.alert('Você precisa começar a estudar antes de tirar uma pausa!')
-//     } else if (estudo.estudoIniciado == 1) return
-//     else if (pausaIniciada === 0 && !estudo.estudoFinalizado)
-//       startCronometroPausa()
-//   })
-
-// const botaoEncerrarPausa = (document.getElementById('acabar-pausa').onclick =
-//   () => {
-//     if (tempoPausa !== '' && tempoPausa !== '00:00:00') stopPausa()
-//   })
 
 const iniciarPausa = () => {
   if (estudo.tempoEstudado === '' && estudo.estudoIniciado === 0) {
