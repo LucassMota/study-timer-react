@@ -1,4 +1,3 @@
-// import React from 'react'
 import pausa from './tempo_pausado'
 
 let hh = 0
@@ -127,20 +126,30 @@ function finalizarEstudos() {
 
   let tempoFinalEstudado = document.getElementById('total-estudado')
 
-  if (tempoEstudado !== undefined && tempoEstudado === '00:00:00')
+  if (
+    tempoEstudado !== undefined &&
+    estudoIniciado === 0 &&
+    pausa.pausaIniciada === 0
+  )
     tempoFinalEstudado.innerHTML = `Tempo total de estudo: ${tempoTotalEstudado}`
 
   if (tempoEstudado !== '') {
     estudo.estudoFinalizado = true
 
-    function removeBotao() {
-      const divBotao = document.getElementById('finalizar')
-      return divBotao.remove()
+    if (estudoIniciado == 0 && pausa.pausaIniciada == 0) {
+      function removeBotao() {
+        const divBotao = document.getElementById('finalizar')
+        return divBotao.remove()
+      }
+      removeBotao()
     }
-    removeBotao()
   }
 
-  if (estudo.estudoFinalizado) {
+  if (
+    estudo.estudoFinalizado &&
+    estudoIniciado === 0 &&
+    pausa.pausaIniciada === 0
+  ) {
     const botaoReiniciar = document.createElement('button')
 
     botaoReiniciar.innerHTML = 'Gostaria de reiniciar?'
