@@ -1,0 +1,117 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: rgb(63, 63, 63);
+}
+
+.titulo {
+  height: 250px;
+  width: 100%;
+  padding-top: 100px;
+  font-family: 'Roboto', Courier, monospace;
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight: bold;
+  background-color: rgb(190, 115, 16);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.max-width {
+  box-sizing: border-box;
+  margin-top: 10%;
+  background-color: #fff;
+  text-align: center;
+  padding: 25px;
+  background: rgb(63, 63, 63);
+}
+
+h1 {
+  font-family: 'Roboto', Courier, monospace;
+  margin-top: 20px;
+}
+
+.container-pausa {
+  font-family: 'Roboto', Courier, monospace;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.container-estudado {
+  font-family: 'Roboto', Courier, monospace;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  font-family: 'Segoe UI';
+  font-size: 1.1em;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.finalizar {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.reiniciar {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #ff73c9;
+}
+
+.tempo-final {
+  font-family: 'Roboto', Courier, monospace;
+  text-align: center;
+  margin: 100px 300px;
+}
+
+button:hover {
+  background-color: #a1c0d1;
+}
+
+.bg-green {
+  background-color: #b2d1a1;
+  margin-top: 10px;
+}
+
+.bg-yellow {
+  background-color: #d1cba1;
+}
+
+.bg-red {
+  background-color: #d1a1a1;
+}
+
+.total {
+  font-family: 'Roboto', Courier, monospace;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.tempo-final-estudo {
+  margin-top: 50px;
+  font-size: 3.5vw;
+}
+
+.tempo-final-pausa {
+  font-size: 3.5vw;
+}
