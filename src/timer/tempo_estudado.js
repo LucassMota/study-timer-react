@@ -127,16 +127,17 @@ function finalizarEstudos() {
   let tempoFinalEstudado = document.getElementById('total-estudado')
 
   if (
-    tempoEstudado !== undefined &&
+    tempoEstudado !== '' &&
     estudoIniciado === 0 &&
     pausa.pausaIniciada === 0
-  )
+  ) {
     tempoFinalEstudado.innerHTML = `Tempo total de estudo: ${tempoTotalEstudado}`
+  }
 
   if (tempoEstudado !== '') {
     estudo.estudoFinalizado = true
 
-    if (estudoIniciado == 0 && pausa.pausaIniciada == 0) {
+    if (estudoIniciado === 0 && pausa.pausaIniciada === 0) {
       function removeBotao() {
         const divBotao = document.getElementById('finalizar')
         return divBotao.remove()
