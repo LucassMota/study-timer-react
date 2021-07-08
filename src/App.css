@@ -1,0 +1,170 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  /* background: #ffa500; */
+  background: linear-gradient(
+    180deg,
+    rgba(47, 232, 13, 1) 0%,
+    rgba(255, 165, 0, 1) 86%
+  );
+}
+
+.pomodoro {
+  background-color: #ff4040;
+  width: 180px;
+  height: 40px;
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 25px;
+  font-family: 'Segoe UI';
+  font-size: 1.1em;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 100px;
+  margin-right: 200px;
+}
+
+.pomodoro a {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #b4edfc;
+  text-shadow: 0 0 7px #00000098;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.timer-study {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-pause {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-study p {
+  font-size: 1.5vw;
+  color: #4aff53;
+  text-shadow: 0 0 7px #00000098;
+}
+
+.timer-pause p {
+  font-size: 1.5vw;
+  color: #ff4040;
+  text-shadow: 0 0 7px #00000098;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.timer-pause {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.timer-study {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.buttons-study button,
+.buttons-pause button,
+.total button {
+  padding: 10px;
+  border: none;
+  font-family: 'Segoe UI';
+  font-size: 1.1em;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.finalizar {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.reiniciar {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: #ff73c9;
+}
+
+.tempo-final {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 100px 300px;
+}
+
+button:hover {
+  background-color: #a1c0d1;
+}
+
+.button-start {
+  background-color: #b2d1a1;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.button-pause {
+  background-color: #d1cba1;
+  margin-right: 10px;
+}
+
+.button-finish {
+  background-color: #d1a1a1;
+  margin-right: 10px;
+}
+
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.tempo-final-estudo {
+  margin-top: 50px;
+  font-size: 2.5vw;
+  /* color: #4aff53; */
+  color: #4ac6ff;
+  text-shadow: 0 0 7px #00000098;
+}
+
+.tempo-final-pausa {
+  font-size: 2.5vw;
+  /* color: #ff4040; */
+  color: #4ac6ff;
+  text-shadow: 0 0 7px #00000098;
+}
