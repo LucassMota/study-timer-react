@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.interval-conainter {
+  display: flex;
+  margin: 0 40px;
+  align-items: center;
+}
+
+.interval-lenght-container {
+  display: flex;
+}
+
+.interval-lenght-container button,
+.interval-conainter button {
+  padding: 5px 12px;
+  margin: 0 10px;
+  height: 25px;
+  background-color: #263646;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #eee;
+}
+
+.interval-lenght {
+  font-size: 2rem;
+  margin: 0 10px;
+}
