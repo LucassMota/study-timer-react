@@ -1,5 +1,4 @@
 import React from 'react'
-// import PomodoroStyle from './assets/pomodoroStyle.css'
 import './assets/pomodoroStyle.css'
 import pomodoro from './pomodoro'
 import { Helmet } from 'react-helmet'
@@ -12,7 +11,6 @@ export default function PomodoroRender() {
         <style>
           {
             'body { background: linear-gradient(180deg,rgba(35,102,22,1) 0%,rgba(255,81,50,1) 86%); }'
-            // 'html {background: rgba(255,99,71,1); }')
           }
         </style>
       </Helmet>
