@@ -1,45 +1,36 @@
-main {
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  justify-content: center;
-  align-items: center;
-}
+import React from 'react'
+// import PomodoroStyle from './assets/pomodoroStyle.css'
+import './assets/pomodoroStyle.css'
+import pomodoro from './pomodoro'
+import { Helmet } from 'react-helmet'
 
-h2 {
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-h4 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.interval-conainter {
-  display: flex;
-  margin: 0 40px;
-  align-items: center;
-}
-
-.interval-lenght-container {
-  display: flex;
-}
-
-.interval-lenght-container button,
-.interval-conainter button {
-  padding: 5px 12px;
-  margin: 0 10px;
-  height: 25px;
-  background-color: #263646;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #eee;
-}
-
-.interval-lenght {
-  font-size: 2rem;
-  margin: 0 10px;
+export default function PomodoroRender() {
+  console.clear()
+  return (
+    <div>
+      <Helmet>
+        <style>
+          {
+            'body { background: linear-gradient(180deg,rgba(35,102,22,1) 0%,rgba(255,81,50,1) 86%); }'
+            // 'html {background: rgba(255,99,71,1); }')
+          }
+        </style>
+      </Helmet>
+      <h1 className='pomodoro-title'>Pomodoro</h1>
+      <div id='container-pomodoro' className='container-pomodoro'>
+        <div className='timer-pomodoro'>
+          <h1 id='w_minutes'>25</h1>
+          <h1 id='semicolon'>:</h1>
+          <h1 id='w_seconds'>00</h1>
+        </div>
+        <button
+          id='start'
+          className='btn-start'
+          onClick={() => pomodoro.startStudy()}
+        >
+          Começar!
+        </button>
+      </div>
+    </div>
+  )
 }
