@@ -19,13 +19,10 @@ buttonPause.setAttribute('class', 'btn-stop')
 buttonPause.innerHTML = 'Começar Pausa'
 
 function startStudy() {
-  // workerTimers.clearInterval(startTimer)
 
   if (cycles <= 4) {
     cycles++
   } else cycles = 0
-
-  console.log(cycles)
 
   wm = 24
 
