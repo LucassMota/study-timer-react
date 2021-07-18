@@ -35,7 +35,7 @@ function startStudy() {
 
   document.getElementById('start').remove()
 
-  document.getElementById('container').appendChild(buttonPause)
+  document.getElementById('container-pomodoro').appendChild(buttonPause)
 }
 
 buttonPause.onclick = () => {
@@ -53,6 +53,9 @@ buttonPause.onclick = () => {
       ws = 60
       wm = 14
 
+      window.alert(
+        'Você completou quatro ciclos pomodoro. Parabéns! Agora sua pausa será merecidamente maior: 15 minutos.'
+      )
       document.getElementById('w_minutes').innerText = '15'
       document.getElementById('w_seconds').innerText = '00'
     } else {
@@ -66,7 +69,7 @@ buttonPause.onclick = () => {
     startTimer = workerTimers.setInterval(timerPomodoro, 1000)
 
     document.getElementById('btn-stop').remove()
-    document.getElementById('container').appendChild(buttonRestart)
+    document.getElementById('container-pomodoro').appendChild(buttonRestart)
   }
 }
 
@@ -83,8 +86,6 @@ buttonRestart.onclick = () => {
       cycles++
     } else cycles = 0
 
-    console.log(cycles)
-
     workerTimers.clearInterval(startTimer)
     ws = 60
     wm = 24
@@ -95,7 +96,7 @@ buttonRestart.onclick = () => {
     startTimer = workerTimers.setInterval(timerPomodoro, 1000)
 
     document.getElementById('btn-restart').remove()
-    document.getElementById('container').appendChild(buttonPause)
+    document.getElementById('container-pomodoro').appendChild(buttonPause)
   }
 }
 
